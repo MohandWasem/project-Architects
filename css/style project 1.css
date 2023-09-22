@@ -1,0 +1,310 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Tajawal:wght@500&display=swap');
+
+*{
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 2500px;
+}
+h2,h3,h4,h5,h6{
+    font-size: 30px;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 2px 2px 4px #000;
+    height: 80px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+nav .nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+    background: linear-gradient(to left,rgb(12, 226, 12),rgb(1, 110, 1));
+    transition: all .3s linear;
+}
+
+nav ul li:hover{
+    transform: translateX(10px);
+    background: linear-gradient(to right,rgb(12, 226, 12),rgb(1, 110, 1));
+
+}
+
+
+nav ul li a{
+    color: #fff;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../fotos/header.jpg) no-repeat center fixed;
+    position: relative;
+}
+
+header h1{
+position: absolute;
+top: 50%;
+left: 40%;
+font-size: 40px;
+color: #fff;
+letter-spacing: 5px;
+
+}
+header h1 span{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    opacity: .7;
+    border-radius: 0 10px;
+}
+
+/* projects section */
+section{
+    margin-top: 50px;
+}
+hr{
+    opacity: .5;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .proj-house{
+    margin: 1%;
+    width: calc(92%/4);
+    position: relative;
+    transition: all .3 linear;
+}
+
+.row .proj-house:hover{
+    transform: scale(.8);
+    cursor: -webkit-zoom-in;
+}
+
+.row .proj-house img{
+    width: 100%;
+    height: 100%;
+}
+
+.row .proj-house div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to left,rgb(12, 226, 12),rgb(1, 110, 1));
+    color: #fff;
+    padding: 10px;
+}
+
+.p1{
+    font-size: 15px;
+    background: linear-gradient(to right,rgb(12, 226, 12),rgb(1, 110, 1));
+
+}
+
+
+
+
+ .row .about-box{
+    margin: 1%;
+    width: calc(92%/4);
+    
+ }
+
+ .row .about-box img{
+    width: 100%;
+    /* height: 100%; */
+    filter:blur() ;
+ }
+
+ .row .about-box span{
+    opacity: .6;
+    margin: 30px 0;
+ }
+
+ .row .about-box button{
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(to right,rgb(138, 232, 67),rgb(13, 203, 124));
+    font-size: 20px;
+    transition: all .3s linear;
+
+ }
+
+ .row .about-box button:hover{
+    background: linear-gradient(to left,rgb(138, 232, 67),rgb(13, 203, 124));
+    transform: translateX(10px);
+    cursor: pointer;
+ }
+
+
+ .p2{
+    font-size: 20px;
+ }
+
+ #contact .form-sect{
+    width: 100%;
+ }
+
+ #contact .form-sect input{
+    display: block;
+    margin: 20px 0;
+    border: 2px solid rgb(138, 232, 67);
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    position: relative;
+ }
+ #contact .form-sect input::placeholder{
+position: absolute;
+transition: all .3 linear;
+
+ }
+ #contact .form-sect input:focus::placeholder{
+    font-size: 10px;
+    top: 0;
+    left: 0;
+ }
+
+ #contact .form-sect button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+ }
+
+
+ .contact-img{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+ }
+
+ h6{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ footer a:hover{
+    background-color:red;
+    color: antiquewhite;
+
+ }
+
+ .img-top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+ }
+
+ nav ul li:nth-child(1){
+    display: none;
+ }
+
+
+
+ .loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+ }
+ .loader-container.fade-out{
+    top:-120%;
+}
+
+
+ @media(max-width:767px){
+
+    .row .proj-house{
+        margin: 2%;
+        width: calc(96%/1);
+    }
+
+    .row .about-box{
+        margin: 2%;
+        width: calc(96%/1);
+    }
+
+ }
+
+ @media(min-width:768px) and (max-width:991px){
+
+    .row .proj-house{
+        margin: 2%;
+        width: calc(92%/2);
+    }
+
+    .row .about-box{
+        margin: 2%;
+        width: calc(92%/2);
+    }
+
+ }
+
+ @media(max-width:991px){
+
+    nav ul li{
+        display: none;
+    }
+
+    nav ul li:nth-child(1){
+        display: block;
+    }
+
+    nav ul:hover li{
+        display: block;
+        transform: translateY(50px);
+    }
+
+ }
